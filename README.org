@@ -1,0 +1,4 @@
+* Official HSK vocabulary list
+I couldn't find a downloadable version of the official list of words for the tests so this script scrapes the API used to display the HTML tables on the official website.
+
+The json file has a list of 6 lists of strings. Each of the 6 lists are the vocabulary words for that level.

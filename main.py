@@ -32,8 +32,7 @@ def fetch_hsk_words(level: int) -> list[str]:
     data = response.json()
 
     assert data["errcode"] == 0
-
-    words = [x["word"] for x in data["data"]["list"]]
+    words = [(x["word"], x["pinyin_num"], x["translation"]) for x in data["data"]["list"]]
 
     page_num += 1
     
